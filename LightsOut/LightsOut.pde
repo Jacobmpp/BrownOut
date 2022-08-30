@@ -225,6 +225,7 @@ void resizing(){
 }
 
 boolean undo(){
+  if(points>0)points--;
   if(actions.size()==0)return false;
   Action temp = actions.pop();
   switch(temp.type){
